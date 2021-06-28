@@ -40,5 +40,24 @@ namespace MRPApp.Logic
                 return ctx.SaveChanges(); // 데이터 커밋
             }
         }
+
+        internal static List<Schedules> GetSchedules()
+        {
+            List<Model.Schedules> list;
+
+            using (var ctx = new MRPIEntities())
+                list = ctx.Schedules.ToList(); // SELECT
+
+            return list;
+        }
+
+        internal static int SetSchedule(Schedules item)
+        {
+            using (var ctx = new MRPIEntities())
+            {
+                ctx.Schedules.AddOrUpdate(item);
+                return ctx.SaveChanges(); // 데이터 커밋
+            }
+        }
     }
 }

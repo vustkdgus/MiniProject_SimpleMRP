@@ -154,6 +154,7 @@ namespace MRPApp.View.Setting
             TxtBasicCode.Background = new SolidColorBrush(Colors.White);
 
             TxtBasicCode.Text = TxtCodeName.Text = TxtCodeDesc.Text = string.Empty;
+            TxtBasicCode.Focus();
         }
 
         private void BtnSearch_Click(object sender, RoutedEventArgs e)
