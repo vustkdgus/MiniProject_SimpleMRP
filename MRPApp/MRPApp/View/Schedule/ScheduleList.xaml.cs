@@ -80,8 +80,8 @@ namespace MRPApp.View.Schedule
             item.SchFacilityID = CboSchFacilityID.SelectedValue.ToString();
             item.SchAmount = (int)NudSchAmount.Value;
 
-            item.ModDate = DateTime.Now;
-            item.ModID = "MRP";
+            item.RegDate = DateTime.Now;
+            item.RegID = "MRP";
 
             try
             {

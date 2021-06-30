@@ -59,5 +59,24 @@ namespace MRPApp.Logic
                 return ctx.SaveChanges(); // 데이터 커밋
             }
         }
+
+        internal static List<Process> GetProcesses()
+        {
+            List<Model.Process> list;
+
+            using (var ctx = new MRPIEntities())
+                list = ctx.Process.ToList(); // SELECT
+
+            return list;
+        }
+
+        internal static int SetProcess(Process item)
+        {
+            using (var ctx = new MRPIEntities())
+            {
+                ctx.Process.AddOrUpdate(item); // INSERT | UPDATE
+                return ctx.SaveChanges(); // 데이터 커밋
+            }
+        }
     }
 }
