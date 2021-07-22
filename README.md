@@ -1,9 +1,9 @@
 # MiniProject_SimpleMRP
 
 
-![header](https://capsule-render.vercel.app/api?type=shark&color=auto&height=300&section=header&text=MiniProject_SimpleMRP%20&fontSize=50&animation=fadeIn&fontAlignY=38)
+![header](https://capsule-render.vercel.app/api?type=shark&color=auto&height=300&section=header&text=MiniProject SimpleMRP%20&fontSize=50&animation=fadeIn&fontAlignY=38)
 <br>
-<p align='center'><b> MiniProject_SimpleMRP with Rasp </b></p>
+<p align='center'><b> MiniProject SimpleMRP with Rasp </b></p>
 <p align='center'>
    <br>
    <br>
